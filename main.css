@@ -1,0 +1,194 @@
+:root {
+  --buttoncolor: #e75954;
+  --buttonhover: #eb8f8c;
+  --darkwhite: #f79f9e;
+  --textblack: #2a292a;
+  --textgray: #818081;
+  --line-gray: #898789;
+  --textgrey: #e3e2e3;
+  --lightergray: #eeedee;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: roboto;
+  height: 100vh;
+  overflow-y: initial;
+  overflow-x: hidden;
+}
+
+/* 
+header container */
+.container-padding {
+  padding: 5vh 18vw;
+}
+
+#header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding-left: 30px;
+  color: var(--textgray);
+  position: relative;
+}
+.nav-link:hover {
+  color: var(--textblack);
+}
+
+input {
+  margin-left: 40px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  width: 12rem;
+  border-color: var(--textgrey);
+}
+
+.button-input:focus {
+  outline: none;
+}
+/* 
+Freedom Section */
+#freedom {
+  margin-bottom: 27vh;
+}
+
+.freedom-page {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  width: 32rem;
+}
+.line {
+  width: 0.22rem;
+  height: 8rem;
+  background: var(--line-gray);
+}
+.freedom-heading {
+  font-size: 3.5rem;
+  color: var(--textblack);
+}
+
+.freedom-text {
+  line-height: 2;
+  font-size: 1rem;
+  /* letter-spacing: 1px; */
+  margin-top: 0;
+  padding-top: 0;
+  color: var(--textgray);
+}
+
+.freedom-image {
+  width: 45rem;
+  position: absolute;
+  right: -250px;
+  top: 114px;
+}
+.freedom-button {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 10px 10px 10px 12px;
+  color: #fff;
+  width: 9.5rem;
+  background: var(--buttoncolor);
+}
+
+.button-hover:hover {
+  background: var(--buttonhover);
+  cursor: pointer;
+}
+.line3 {
+  border-top: 1px solid var(--line-grayy);
+  padding: 0;
+  margin: 0;
+}
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+.feature-text {
+  margin-bottom: 35px;
+}
+.features-para {
+  font-size: 1rem;
+  line-height: 2;
+  font-weight: 500;
+}
+.circle {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--textgrey);
+  margin-right: 4px;
+}
+.circleline {
+  display: flex;
+  flex-direction: row;
+}
+
+.learn-more {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.learn-more:hover {
+  animation: stretch 1s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes stretch {
+  100% {
+    margin-left: 1rem;
+  }
+}
+
+.line2 {
+  width: 3rem;
+  height: 0.2rem;
+  background: var(--buttoncolor);
+  margin: 5px 10px 0 0;
+  align-self: flex-start;
+}
+
+.line-text {
+  color: var(--buttoncolor);
+  font-weight: bold;
+  margin: 0;
+  align-self: flex-start;
+}
+/* 
+Nike Section */
+
+.nike-heading {
+  font-size: 3.5rem;
+  font-family: roboto;
+  margin: 0;
+  padding: 0;
+  color: var(--textblack);
+}
+
+.nike-page {
+  margin-top: 50px;
+}
+.nice-button {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 10px 10px 10px 12px;
+  color: #fff;
+  width: 4.5rem;
+  background: var(--buttoncolor);
+}
